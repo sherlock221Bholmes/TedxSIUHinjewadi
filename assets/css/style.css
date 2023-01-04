@@ -1225,8 +1225,8 @@ font-size: medium;}
     width: 10em;
     height: 10em;
 }
-.loader {            
-    margin: 60px auto;
+/* .loader {        
+    margin: 28% auto;
     font-size: 10px;
     position: relative;
     text-indent: -9999em;
@@ -1267,4 +1267,4 @@ font-size: medium;}
     width:100%;
     height:100%;
     background-color:#000;
-}
+} */
