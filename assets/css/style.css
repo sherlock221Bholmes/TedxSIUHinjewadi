@@ -578,7 +578,7 @@ section {
 }
 #about .about-container .background-x {
   min-height: 300px;
-  background: url(../img/TEDx-X.png);
+  background: url(../img/ted-x2.png) no-repeat;
   background-size:contain;
   margin-bottom: 10px;
 
@@ -595,6 +595,12 @@ section {
 }
 
 @media (max-width: 768px) {
+  #about .about-container .background-x{
+    min-height: 200px;
+    background: url(../img/ted-X.png) no-repeat;
+    background-size:contain;
+    margin-bottom: 10px;
+  }
   #about .about-container .title {
     padding-top: 15px;
   }
