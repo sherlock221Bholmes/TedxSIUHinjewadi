@@ -61,9 +61,12 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Welcome to <span>TED<sup>X</sup></span>SIUHinjewadi</h1>
+      <h1 style="text-transform: none;">Welcome to <span>TED<sup>x</sup></span><em
+          style="font-weight: lighter;font-style: normal;">SIUHinjewadi</em></h1>
       <h2>28<sup>th</sup> January, 2023</h2>
-      <a href="#about" class="btn-get-started">Explore</a>
+      <a href="#about" class="btn-get-started">Register</a>
+      <div class="flipper" data-reverse="true" data-datetime="2023-01-28 00:00:00" data-template="ddd|HH|ii|ss"
+        data-labels="Days|Hours|Minutes|Seconds" id="myFlipper"></div>
     </div>
   </section><!-- End Hero Section -->
 
@@ -177,7 +180,7 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h3 class="section-title">Speakers</h3>
-          
+
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -779,7 +782,7 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h3 class="section-title">Sponsors</h3>
-         
+
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -855,8 +858,8 @@
         <br>
         <div class="row">
           <div class="col-lg-4 col-md-6 col-xs-12">
-            <iframe src="https://www.instagram.com/p/CaCW9kIpCSt/embed" width="400" height="550" frameborder="0"
-              style="padding-right: 65px;" scrolling="no" allowtransparency="true"></iframe>
+            <iframe src="https://www.instagram.com/p/Cma3cyzqUTK/embed" width="400" height="550" frameborder="0"
+              style="padding-right: 65px;" scrolling="no" allowtransparency="true" allowfullscreen="true" allow="autoplay;"></iframe>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="blog-item">
@@ -889,14 +892,36 @@
       <div class="container">
         <div class="section-header">
           <h3 class="section-title">Contact</h3>
-          
+
+        </div>
+      </div>
+      <div id="contact" class="contact">
+
+        <div class="con_bg">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6" style="text-align: center;padding-top: 20%;">
+                <p style="color: #e62424;font-size: xx-large;"><i class="bi-geo-alt"></i></p>
+                <p>Symbiosis Centre For Information Technology,<br>Plot 15, Phase-I, Rajiv Gandhi InfoTech Park,
+                  Hinjawadi, Pune - 411057, Maharashtra, India.</p>
+
+              </div>
+              <div class="col-md-6 padding_right2">
+                <div class="map_section">
+                  <div id="map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15127.205802018469!2d73.736334!3d18.582988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x326d8668fc94b0a3!2sSymbiosis%20Centre%20for%20Information%20Technology!5e0!3m2!1sen!2sin!4v1631516158738!5m2!1sen!2sin"
+                      width="100%" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Uncomment below if you wan to use dynamic maps -->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15127.205802018469!2d73.736334!3d18.582988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x326d8668fc94b0a3!2sSymbiosis%20Centre%20for%20Information%20Technology!5e0!3m2!1sen!2sin!4v1631516158738!5m2!1sen!2sin"
-        width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <!--  -->
 
       <div class="container">
         <div>
@@ -908,18 +933,18 @@
 
               <div>
 
-                <p><i class="bi bi-person"></i>Shivam Trivedi</p>
+                <p><i class="bi bi-person"></i>Sayantan Saha</p>
               </div>
 
               <div>
-                <p><a href="tel:+917318110961"><i class="bi bi-phone"></i>+91-73181-10961</a></p>
+                <p><a href="tel:+919475555093"><i class="bi bi-phone"></i>+91-94755-55093</a></p>
               </div>
               <div>
-                <p><i class="bi bi-person"></i>Shivam Trivedi</p>
+                <p><i class="bi bi-person"></i>Raunak Chand</p>
               </div>
 
               <div>
-                <p><a href="tel:+917318110961"><i class="bi bi-phone"></i>+91-73181-10961</a></p>
+                <p><a href="tel:+919554555598"><i class="bi bi-phone"></i>+91-95545-55598</a></p>
               </div>
             </div>
 
@@ -978,6 +1003,37 @@
         box.classList.remove('disp');
       });
     }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/jquery.flipper-responsive.js"></script>
+  <script>
+    jQuery(function ($) {
+      $('#myFlipper').flipper('init');
+      $('#modalFlipper').flipper('init');
+    });
+  </script>
+  <script>
+    window.setInterval(function () {
+
+      var current = new Date();
+      var expiry = new Date("January 28, 2023 00:00:00")
+
+      if (current.getTime() > expiry.getTime()) {
+        $('#myFlipper').hide();
+
+      } else if (current.getTime() < expiry.getTime()) {
+        $('#myFlipper').show();
+      }
+
+    }, 0);
   </script>
 
 </body>
