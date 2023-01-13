@@ -91,15 +91,15 @@ jQuery(function($){
           var rev = settings.reverse ? 'reverse' : '';
           $part.append('<div class="flipper-digit ' + rev + '"></div>');
         }
-        if(part === 'dd' || part === 'HH' || part === 'ii' || part === 'ss'){
+        if(part === 'dd' || part === 'ddd' || part === 'HH' || part === 'ii' || part === 'ss'){
           var rev = settings.reverse ? 'reverse' : '';
           $part.append('<div class="flipper-digit ' + rev + '"></div>');
           $part.append('<div class="flipper-delimiter"></div>');
           $part.append('<div class="flipper-digit ' + rev + '"></div>');
-          // if(part === 'dd'){
-          //   $part.append('<div class="flipper-delimiter"></div>');
-          //   // $part.append('<div class="flipper-digit ' + rev + '"></div>');
-          // }
+          if(part === 'ddd'){
+            $part.append('<div class="flipper-delimiter"></div>');
+            $part.append('<div class="flipper-digit ' + rev + '"></div>');
+          }
         }
         if(part === 'd'){
           for(n = 0; n <= 31; n++){
@@ -119,13 +119,13 @@ jQuery(function($){
             $part.find('.flipper-digit:eq(1)').append('<div class="digit-face">' + n + '</div>');
           }
         }
-        if(part === 'dd'){
+        if(part === 'dd' || part === 'ddd'){
           for(n = 0; n <= 9; n++){
             $part.find('.flipper-digit:eq(0)').append('<div class="digit-face">' + n + '</div>');
             $part.find('.flipper-digit:eq(1)').append('<div class="digit-face">' + n + '</div>');
-            // if(part === 'dd'){
-            //   $part.find('.flipper-digit:eq(2)').append('<div class="digit-face">' + n + '</div>');
-            // }
+            if(part === 'ddd'){
+              $part.find('.flipper-digit:eq(2)').append('<div class="digit-face">' + n + '</div>');
+            }
           }
         }
         if(part === 'HH'){
@@ -347,7 +347,7 @@ jQuery(function($){
         // three sections
         $flipper.find('.flipper-ddd').find('.flipper-digit:eq(0)').attr('data-value', days_str[0]);
         $flipper.find('.flipper-ddd').find('.flipper-digit:eq(1)').attr('data-value', days_str[1]);
-        // $flipper.find('.flipper-ddd').find('.flipper-digit:eq(2)').attr('data-value', days_str[2]);
+        $flipper.find('.flipper-ddd').find('.flipper-digit:eq(2)').attr('data-value', days_str[2]);
       }
       else {
         $flipper.find('.flipper-group .flipper-digit').removeAttr('data-value');
@@ -372,7 +372,7 @@ jQuery(function($){
         // three sections
         $flipper.find('.flipper-ddd .flipper-digit:eq(0) .digit-face:contains(' + days_str[0] + ')').addClass('active');
         $flipper.find('.flipper-ddd .flipper-digit:eq(1) .digit-face:contains(' + days_str[1] + ')').addClass('active');
-        // $flipper.find('.flipper-ddd .flipper-digit:eq(2) .digit-face:contains(' + days_str[2] + ')').addClass('active');
+        $flipper.find('.flipper-ddd .flipper-digit:eq(2) .digit-face:contains(' + days_str[2] + ')').addClass('active');
         addAppearance($flipper);
       }
 
